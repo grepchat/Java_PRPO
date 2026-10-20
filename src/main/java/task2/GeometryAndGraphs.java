@@ -9,8 +9,8 @@ public class GeometryAndGraphs {
         public Graph(int vertices) {
             for (int i = 0; i < vertices; i++) adjList.put(i, new ArrayList<>());
         }
-        public void addEdge(u, v) { adjList.get(u).add(v); adjList.get(v).add(u); }
-        public void removeEdge(u, v) { adjList.get(u).remove((Integer) v); adjList.get(v).remove((Integer) u); }
+        public void addEdge(int u, int v) { adjList.get(u).add(v); adjList.get(v).add(u); }
+        public void removeEdge(int u, int v) { adjList.get(u).remove((Integer) v); adjList.get(v).remove((Integer) u); }
     }
 
     // 11. Прямые по точкам (HashMap)

@@ -24,7 +24,7 @@ public class FilesAndLists {
             String line;
             while ((line = reader.readLine()) != null) lines.add(line);
         } catch (IOException e) { System.out.println("Ошибка: " + e.getMessage()); }
-        Collections.sort(lines);
+        java.util.Collections.sort(lines);
         lines.forEach(System.out::println);
     }
 
